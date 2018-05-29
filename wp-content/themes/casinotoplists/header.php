@@ -20,13 +20,13 @@
 <!--<![endif]-->
 
 <head>
-    <title>Top Online Casinos 2018 | Best Gambling Sites,Casino Bonuses & More</title>
+    <title><?php bloginfo('name'); ?></title>
 
     <meta name="viewport" content="width=device-width, user-scalable=yes">
 
     <meta charset="utf-8"/>
     <meta name="description"
-          content="Looking for an online casino to play at? Stop right in your tracks - we&#039;ve got all the information you need to know about gambling at online casinos, the casino games offered, the best online casino bonuses you can get your hands on and promotions around. Visit CasinoToplists for more info today."/>
+          content="<?php bloginfo('description'); ?>"/>
 
 
     <meta property="og:image" content="themes/casinotoplists/images/logo/ctl_sitelogo_en_US.png"/>
@@ -47,9 +47,7 @@
 
     <div class="trustbadges">
         <div class="pageCenterLayout en_US">
-            <img src="assets/ll_placeholder.jpg"
-                 data-src="https://edge.www.casinotoplists.com/themes/casinotoplists/images/header/en_US.png?t=1517840952"
-                 alt="CasinoToplists Trust logos"/>
+            <img src="https://edge.www.casinotoplists.com/themes/casinotoplists/images/header/en_US.png?t=1517840952"/>
         </div>
     </div>
 
@@ -57,9 +55,7 @@
         <div class="pageCenterLayout">
             <div class="mainLogo fl">
                 <a href="/">
-                    <img src="assets/ll_placeholder.jpg"
-                         data-src="https://edge.www.casinotoplists.com/themes/casinotoplists/images/logo/ctl_sitelogo_en_US.png?t=1476780053"
-                         alt="casinotoplists.com"/>
+                    <img src="<?php the_field('header_img', 'option') ?>"/>
                 </a>
             </div>
 
@@ -70,7 +66,7 @@
 
                     <input placeholder="" class="input_box search_box placeholder" name="Search" type="text"
                            id="searchBox" value=""/>
-                    <input class="search_button" type="submit" value="Search"/>
+                    <input class="search_button" type="submit" value="Поиск"/>
 
                 </form>
 
@@ -85,29 +81,15 @@
         <div id="menu" class="dropdownMenu">
             <div class="pageCenterLayout">
                 <div class="navigation_button_container">
-
-                    <ul class="dropdown_menu">
-
-                        <li class="drop-down">
-
-                            <a href="/casino-reviews">Casino Reviews</a>
-
-                        </li>
-
-                        <li class="drop-down">
-
-                            <a href="/online-casino-games-guide">Casino Games Guide</a>
-
-                        </li>
-
-                        <li class="drop-down">
-
-                            <a href="/free-casino/play-slot-machines">Free Slots</a>
-
-                        </li>
-
-                    </ul>
-
+                    <?php
+                    echo str_replace('menu-item', 'drop-down', wp_nav_menu(array(
+                            'echo' => false,
+                            'theme_location' => 'menu-1',
+                            'items_wrap' => '<ul class="dropdown_menu">%3$s</ul>',
+                            'container' => 'false'
+                        ))
+                    );
+                    ?>
                 </div>
             </div>
         </div>

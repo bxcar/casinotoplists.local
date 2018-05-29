@@ -172,27 +172,6 @@
                      data-src="https://edge.www.casinotoplists.com/themes/casinotoplists/images/foot_logo_18.png?t=1476780053"
                      alt="eighteen logo"/>
 
-
-                <div class="horizontalMenu">
-
-                    <a href="/disclaimer"
-                    >Disclaimer</a>
-
-                    <a href="/responsible-gambling"
-                    >Responsible Gambling</a>
-
-                    <a href="/privacy-policy"
-                    >Privacy Policy</a>
-
-                    <a href="/contact"
-                    >About Us</a>
-
-                    <a href="/sitemap"
-                    >Sitemap</a>
-
-                </div>
-
-
             </div>
         </div>
     </div>

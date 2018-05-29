@@ -190,30 +190,6 @@
 <!-- Piwik -->
 <script type="text/javascript"
         src="https://edge.www.casinotoplists.com/assets/_combinedfiles/casinotoplists_IndexPage.js?m=1524129476"></script>
-<script type="text/javascript">
-    var piwikSiteId = 105;
-    var channel = "index";
-    var pkBaseURL = "//piwik.casinotoplists.com/";
-</script>
-<script type='text/javascript' src='//piwik.casinotoplists.com/piwik.js'></script>
-<script type="text/javascript">
-    try {
-        var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 105);
-        piwikTracker.setCustomVariable(5, "Page-category", channel, "page");
-        piwikTracker.trackPageView();
-        piwikTracker.enableLinkTracking();
-    } catch (err) {
-    }
-</script>
-<noscript><p><img src="assets/ll_placeholder.jpg" data-src="//piwik.casinotoplists.com/piwik.php?idsite=105"
-                  style="border:0" alt=""/></p></noscript>
-<!-- End Piwik Tracking Code -->
-<script type="application/ld+json">
-    {"@context":"https:\/\/schema.org","@type":"WebPage","@id":"https:\/\/www.casinotoplists.com\/"}
-</script>
-<script type="application/ld+json">
-    {"@context":"http:\/\/schema.org","@type":"WebSite","name":"CasinoToplists","image":"https:\/\/www.casinotoplists.com\/themes\/casinotoplists\/images\/logo\/ctl_sitelogo_en_US.png","url":"https:\/\/www.casinotoplists.com\/","potentialAction":{"@type":"SearchAction","target":"https:\/\/www.casinotoplists.com\/search?Search={search_term_string}","query-input":"required name=search_term_string"}}
-</script>
 
 <?php wp_footer(); ?>
 </body>

@@ -34,9 +34,20 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
 
-    <link rel="shortcut icon" href="/favicon.ico"/>
-    <link rel="stylesheet" type="text/css"
-          href="https://edge.www.casinotoplists.com/assets/_combinedfiles/casinotoplists_IndexPage.css?m=1524129476"/>
+    <link rel="shortcut icon" href="https://www.casinotoplists.com/favicon.ico"/>
+    <?php if (get_the_ID() == 9) { ?>
+        <link rel="stylesheet" type="text/css"
+              href="https://edge.www.casinotoplists.com/assets/_combinedfiles/casinotoplists_CasinoGuideOverviewPage.css?m=1524131373"/>
+    <?php } elseif (get_the_ID() == 11) { ?>
+        <link rel="stylesheet" type="text/css"
+              href="https://edge.www.casinotoplists.com/assets/_combinedfiles/casinotoplists_SuperPage.css?m=1524131659"/>
+    <?php } elseif (get_the_ID() == 216) { ?>
+        <link rel="stylesheet" type="text/css"
+              href="https://edge.www.casinotoplists.com/assets/_combinedfiles/casinotoplists_FlashGamePage.css?m=1524133608"/>
+    <?php } else { ?>
+        <link rel="stylesheet" type="text/css"
+              href="https://edge.www.casinotoplists.com/assets/_combinedfiles/casinotoplists_IndexPage.css?m=1524129476"/>
+    <?php } ?>
     <?php wp_head(); ?>
 </head>
 

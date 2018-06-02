@@ -91,7 +91,25 @@
                                         </a>
                                     </td>
                                     <td class="ratings">
-                                        <div class="ratings_holder five"></div>
+                                        <?php if($item['rating'] == 5) { ?>
+                                            <div class="ratings_holder five"></div>
+                                        <?php } elseif($item['rating'] == 4.5) { ?>
+                                            <div class="ratings_holder fourhalf"></div>
+                                        <?php } elseif($item['rating'] == 4) { ?>
+                                            <div class="ratings_holder four"></div>
+                                        <?php } elseif($item['rating'] == 3.5) { ?>
+                                            <div class="ratings_holder threehalf"></div>
+                                        <?php } elseif($item['rating'] == 3) { ?>
+                                            <div class="ratings_holder three"></div>
+                                        <?php } elseif($item['rating'] == 2.5) { ?>
+                                            <div class="ratings_holder twohalf"></div>
+                                        <?php } elseif($item['rating'] == 2) { ?>
+                                            <div class="ratings_holder two"></div>
+                                        <?php } elseif($item['rating'] == 1.5) { ?>
+                                            <div class="ratings_holder onehalf"></div>
+                                        <?php } elseif($item['rating'] == 1) { ?>
+                                            <div class="ratings_holder one"></div>
+                                        <?php } ?>
                                         <!-- <a class="" href="casino-com">Review</a> -->
                                     </td>
                                     <td class="review">

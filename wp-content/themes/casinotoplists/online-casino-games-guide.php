@@ -41,7 +41,8 @@
                                         <div class="toplist_content_3">
                                             <div class="table width100">
                                                 <div class="toplist_content_image table-cell v-middle">
-                                                    <a rel="nofollow" target="<?= $item['link']['target']; ?>" href="<?= $item['link']['url']; ?>"
+                                                    <a rel="nofollow" target="<?= $item['link']['target']; ?>"
+                                                       href="<?= $item['link']['url']; ?>"
                                                        data-id="523" data-tracker=""
                                                        data-label="">
                                                         <img src="<?= $item['img']; ?>"/>
@@ -49,7 +50,8 @@
                                                 </div>
 
                                                 <div class="bonus table-cell v-middle">
-                                                    <a rel="nofollow" target="<?= $item['link']['target']; ?>" href="<?= $item['link']['url']; ?>"
+                                                    <a rel="nofollow" target="<?= $item['link']['target']; ?>"
+                                                       href="<?= $item['link']['url']; ?>"
                                                        data-id="523" data-tracker=""
                                                        data-label="">
 
@@ -57,7 +59,8 @@
                                                 </div>
 
                                                 <div class="table-cell v-middle center_content playnow">
-                                                    <a rel="nofollow" target="<?= $item['link']['target']; ?>" href="<?= $item['link']['url']; ?>"
+                                                    <a rel="nofollow" target="<?= $item['link']['target']; ?>"
+                                                       href="<?= $item['link']['url']; ?>"
                                                        data-id="523" data-tracker=""
                                                        data-label="" class="play_button with_hover">
                                                         <span><?= $item['button_text']; ?></span>
@@ -70,7 +73,7 @@
 
                             </div>
 
-<!--                            <span class="terms-and-conditions">Terms and conditions might apply to these offers.</span>-->
+                            <!--                            <span class="terms-and-conditions">Terms and conditions might apply to these offers.</span>-->
 
                         </div>
                         </p>
@@ -87,10 +90,12 @@
                                 foreach (get_field('oc_block_2_posts') as $item) { ?>
                                     <ul>
                                         <li class="clearfix">
-                                            <a target="<?= $item['link']['target']; ?>" href="<?= $item['link']['url']; ?>">
+                                            <a target="<?= $item['link']['target']; ?>"
+                                               href="<?= $item['link']['url']; ?>">
                                                 <div class="content_wrapper clearfix no-widget">
                                                     <div style="background-image: url(<?= $item['img']; ?>);
-                                                            background-position: 0;" class="game_image icon_wrapper fl slots"></div>
+                                                            background-position: 0;"
+                                                         class="game_image icon_wrapper fl slots"></div>
                                                     <div class="info_wrapper">
                                                         <h3><?= $item['title']; ?></h3>
                                                         <p><?= $item['desc']; ?></p>
@@ -108,7 +113,8 @@
 
 
                     <div class="article_body">
-                        <h2 style="text-align: justify;"><strong><img src="<?php the_field('oc_block_2_img'); ?>" class="leftAlone"/></strong></h2>
+                        <h2 style="text-align: justify;"><strong><img src="<?php the_field('oc_block_2_img'); ?>"
+                                                                      class="leftAlone"/></strong></h2>
                         <?php the_field('oc_block_3_text1'); ?>
                         <div class="toplist_content_wrapper toplist_3">
                             <div class="toplist_content">
@@ -118,7 +124,8 @@
                                         <div class="toplist_content_3">
                                             <div class="table width100">
                                                 <div class="toplist_content_image table-cell v-middle">
-                                                    <a rel="nofollow" target="<?= $item['link']['target']; ?>" href="<?= $item['link']['url']; ?>"
+                                                    <a rel="nofollow" target="<?= $item['link']['target']; ?>"
+                                                       href="<?= $item['link']['url']; ?>"
                                                        data-id="523" data-tracker=""
                                                        data-label="">
                                                         <img src="<?= $item['img']; ?>"/>
@@ -126,7 +133,8 @@
                                                 </div>
 
                                                 <div class="bonus table-cell v-middle">
-                                                    <a rel="nofollow" target="<?= $item['link']['target']; ?>" href="<?= $item['link']['url']; ?>"
+                                                    <a rel="nofollow" target="<?= $item['link']['target']; ?>"
+                                                       href="<?= $item['link']['url']; ?>"
                                                        data-id="523" data-tracker=""
                                                        data-label="">
 
@@ -134,7 +142,8 @@
                                                 </div>
 
                                                 <div class="table-cell v-middle center_content playnow">
-                                                    <a rel="nofollow" target="<?= $item['link']['target']; ?>" href="<?= $item['link']['url']; ?>"
+                                                    <a rel="nofollow" target="<?= $item['link']['target']; ?>"
+                                                       href="<?= $item['link']['url']; ?>"
                                                        data-id="523" data-tracker=""
                                                        data-label="" class="play_button with_hover">
                                                         <span><?= $item['button_text']; ?></span>
@@ -147,7 +156,7 @@
 
                             </div>
 
-<!--                            <span class="terms-and-conditions">Terms and conditions might apply to these offers.</span>-->
+                            <!--                            <span class="terms-and-conditions">Terms and conditions might apply to these offers.</span>-->
 
                         </div>
                         </p>
@@ -160,7 +169,8 @@
                                         <div class="toplist_content_3">
                                             <div class="table width100">
                                                 <div class="toplist_content_image table-cell v-middle">
-                                                    <a rel="nofollow" target="<?= $item['link']['target']; ?>" href="<?= $item['link']['url']; ?>"
+                                                    <a rel="nofollow" target="<?= $item['link']['target']; ?>"
+                                                       href="<?= $item['link']['url']; ?>"
                                                        data-id="523" data-tracker=""
                                                        data-label="">
                                                         <img src="<?= $item['img']; ?>"/>
@@ -168,7 +178,8 @@
                                                 </div>
 
                                                 <div class="bonus table-cell v-middle">
-                                                    <a rel="nofollow" target="<?= $item['link']['target']; ?>" href="<?= $item['link']['url']; ?>"
+                                                    <a rel="nofollow" target="<?= $item['link']['target']; ?>"
+                                                       href="<?= $item['link']['url']; ?>"
                                                        data-id="523" data-tracker=""
                                                        data-label="">
 
@@ -176,7 +187,8 @@
                                                 </div>
 
                                                 <div class="table-cell v-middle center_content playnow">
-                                                    <a rel="nofollow" target="<?= $item['link']['target']; ?>" href="<?= $item['link']['url']; ?>"
+                                                    <a rel="nofollow" target="<?= $item['link']['target']; ?>"
+                                                       href="<?= $item['link']['url']; ?>"
                                                        data-id="523" data-tracker=""
                                                        data-label="" class="play_button with_hover">
                                                         <span><?= $item['button_text']; ?></span>
@@ -189,7 +201,7 @@
 
                             </div>
 
-<!--                            <span class="terms-and-conditions">Terms and conditions might apply to these offers.</span>-->
+                            <!--                            <span class="terms-and-conditions">Terms and conditions might apply to these offers.</span>-->
 
                         </div>
                         </p>

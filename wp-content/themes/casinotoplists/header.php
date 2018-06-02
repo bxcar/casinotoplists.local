@@ -37,19 +37,19 @@
     <link rel="shortcut icon" href="https://www.casinotoplists.com/favicon.ico"/>
     <?php if (get_the_ID() == 9) { ?>
         <link rel="stylesheet" type="text/css"
-              href="https://edge.www.casinotoplists.com/assets/_combinedfiles/casinotoplists_CasinoGuideOverviewPage.css?m=1524131373"/>
+              href="<?= get_template_directory_uri(); ?>/assets/css/casinotoplists_CasinoGuideOverviewPage.css"/>
     <?php } elseif (get_the_ID() == 11) { ?>
         <link rel="stylesheet" type="text/css"
-              href="https://edge.www.casinotoplists.com/assets/_combinedfiles/casinotoplists_SuperPage.css?m=1524131659"/>
+              href="<?= get_template_directory_uri(); ?>/assets/css/casinotoplists_SuperPage.css"/>
     <?php } elseif (get_the_ID() == 216) { ?>
         <link rel="stylesheet" type="text/css"
-              href="https://edge.www.casinotoplists.com/assets/_combinedfiles/casinotoplists_FlashGamePage.css?m=1524133608"/>
+              href="<?= get_template_directory_uri(); ?>/assets/css/casinotoplists_FlashGamePage.css"/>
     <?php } elseif (is_single()) { ?>
         <link rel="stylesheet" type="text/css"
-              href="https://edge.www.casinotoplists.com/assets/_combinedfiles/casinotoplists_LandingPage.css?m=1524130800"/>
+              href="<?= get_template_directory_uri(); ?>/assets/css/casinotoplists_LandingPage.css"/>
     <?php } else { ?>
         <link rel="stylesheet" type="text/css"
-              href="https://edge.www.casinotoplists.com/assets/_combinedfiles/casinotoplists_IndexPage.css?m=1524129476"/>
+              href="<?= get_template_directory_uri(); ?>/assets/css/casinotoplists_IndexPage.css"/>
     <?php } ?>
     <?php wp_head(); ?>
 </head>
@@ -61,7 +61,7 @@
 
     <div class="trustbadges">
         <div class="pageCenterLayout en_US">
-            <img src="https://edge.www.casinotoplists.com/themes/casinotoplists/images/header/en_US.png?t=1517840952"/>
+            <img src="<?= get_template_directory_uri(); ?>/assets/img/en_US.png"/>
         </div>
     </div>
 

@@ -67,7 +67,7 @@
 </div>
 <!-- Piwik -->
 <script type="text/javascript"
-        src="https://edge.www.casinotoplists.com/assets/_combinedfiles/casinotoplists_IndexPage.js?m=1524129476"></script>
+        src="<?= get_template_directory_uri(); ?>/assets/js/casinotoplists_IndexPage.js"></script>
 
 <?php wp_footer(); ?>
 </body>

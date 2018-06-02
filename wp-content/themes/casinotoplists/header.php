@@ -44,6 +44,9 @@
     <?php } elseif (get_the_ID() == 216) { ?>
         <link rel="stylesheet" type="text/css"
               href="https://edge.www.casinotoplists.com/assets/_combinedfiles/casinotoplists_FlashGamePage.css?m=1524133608"/>
+    <?php } elseif (is_single()) { ?>
+        <link rel="stylesheet" type="text/css"
+              href="https://edge.www.casinotoplists.com/assets/_combinedfiles/casinotoplists_LandingPage.css?m=1524130800"/>
     <?php } else { ?>
         <link rel="stylesheet" type="text/css"
               href="https://edge.www.casinotoplists.com/assets/_combinedfiles/casinotoplists_IndexPage.css?m=1524129476"/>

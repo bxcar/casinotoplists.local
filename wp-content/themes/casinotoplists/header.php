@@ -96,7 +96,7 @@
             <div class="pageCenterLayout">
                 <div class="navigation_button_container">
                     <?php
-                    echo str_replace('menu-item', 'drop-down', wp_nav_menu(array(
+                    echo str_replace(array('menu-item-has-children', 'sub-menu'), array('drop-down', 'fallback'), wp_nav_menu(array(
                             'echo' => false,
                             'theme_location' => 'menu-1',
                             'items_wrap' => '<ul class="dropdown_menu">%3$s</ul>',
@@ -104,6 +104,30 @@
                         ))
                     );
                     ?>
+                    <!--<ul class="dropdown_menu">
+                        <li class="drop-down">
+
+                            <a href="/casino-reviews">Casino Reviews</a>
+
+                            <ul class="fallback">
+                                <li>
+                                    <a href="/usa-online-casinos">Online Casino USA</a>
+                                </li>
+
+                                <li>
+                                    <a href="/uk-online-casinos">Online Casino UK</a>
+                                </li>
+
+                                <li>
+                                    <a href="/canadian-online-casinos">Online Casino Canada</a>
+                                </li>
+
+                                <li>
+                                    <a href="/australia-online-casinos">Online Casino Australia</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>-->
                 </div>
             </div>
         </div>

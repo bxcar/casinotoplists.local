@@ -35,9 +35,11 @@
     <meta name="mobile-web-app-capable" content="yes">
 
     <link rel="shortcut icon" href="https://www.casinotoplists.com/favicon.ico"/>
-    <?php if (get_the_ID() == 9) { ?>
+    <?php if (is_search()) { ?>
         <link rel="stylesheet" type="text/css"
-              href="<?= get_template_directory_uri(); ?>/assets/css/casinotoplists_CasinoGuideOverviewPage.css"/>
+              href="<?= get_template_directory_uri(); ?>/assets/css/casinotoplists_AlgoliaSiteSearchPage.css"/>
+        <link rel="stylesheet" type="text/css"
+              href="<?= get_template_directory_uri(); ?>/assets/css/algoliasitesearch.css"/>
     <?php } elseif (get_the_ID() == 11) { ?>
         <link rel="stylesheet" type="text/css"
               href="<?= get_template_directory_uri(); ?>/assets/css/casinotoplists_SuperPage.css"/>
@@ -47,6 +49,9 @@
     <?php } elseif (is_single()) { ?>
         <link rel="stylesheet" type="text/css"
               href="<?= get_template_directory_uri(); ?>/assets/css/casinotoplists_LandingPage.css"/>
+    <?php } elseif (get_the_ID() == 9) { ?>
+        <link rel="stylesheet" type="text/css"
+              href="<?= get_template_directory_uri(); ?>/assets/css/casinotoplists_CasinoGuideOverviewPage.css"/>
     <?php } else { ?>
         <link rel="stylesheet" type="text/css"
               href="<?= get_template_directory_uri(); ?>/assets/css/casinotoplists_IndexPage.css"/>
@@ -75,10 +80,13 @@
 
             <div class="search_container fr">
 
-                <form class="input_form" id="Form_AlgoliaSiteSearchForm" action="/search" method="get"
-                      enctype="application/x-www-form-urlencoded">
+                <form class="input_form searchform"
+                      role="search"
+                      method="get"
+                      id="searchform"
+                      action="<?php echo esc_url(home_url('/')); ?>">
 
-                    <input placeholder="" class="input_box search_box placeholder" name="Search" type="text"
+                    <input class="input_box search_box placeholder" name="s" type="text"
                            id="searchBox" value=""/>
                     <input class="search_button" type="submit" value="Поиск"/>
 
